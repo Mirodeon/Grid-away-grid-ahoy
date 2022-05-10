@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(229, 239, 246);
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 30px 30px;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 80px;
+    color: grey;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+        gap: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+        gap: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
+
+article.card {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 5px rgb(224, 230, 236);
+    border-radius: 10px;
+}
+
+article.card:hover{
+    box-shadow: -0.7px 15px 50px rgb(188, 204, 223);
+    transform: scale(1.1);
+}
+
+img {
+    max-width: 70px;
+}
+
+h2 {
+    padding: 10px 20px;
+}
+
+.button {
+    margin: 30px auto;
+    position: relative;
+    bottom: 5px;
+}
+
+hr {
+    width: 25%;
+    margin: 30px auto;
+    border-top: 3px solid lightgrey;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    column-gap: 25px;
+    list-style: none;
+    background-color: rgb(74, 170, 244);
+    right: 0px;
+    top: 0px;
+    padding: 25px;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color: grey
+}
+
+.button:hover hr{
+    visibility:hidden
+}
+
+.button-link:hover {
+    color: white;
+    background-color: rgb(74, 170, 244);
+    border-radius: 15px;
+
+}
